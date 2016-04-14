@@ -1,11 +1,12 @@
 Template.addTarefa.events({
-  'submit #addTarefa':function(e){
+  'submit #addTarefa, click #addBtn':function(e){
     e.preventDefault()
     Tarefas.insert({
-      nome:e.target.tarefa.value,
+      nome:$('#tarefa').val(),
       status:false
     })
-    alert('Adicionado')
-    nome:e.target.tarefa.value =''
+    //e.target.tarefa.value =''
+    Materialize.toast("Adicionado!", 3000,'green');
+    $('#tarefa').val('')
   }
 })

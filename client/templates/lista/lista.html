@@ -4,16 +4,21 @@
       {{#each tarefas}}
         <li class="colletion-item">
           <div class="row sem-margin-bottom">
-            <div class="col s7 m11">
-              <span>{{nome}}</span>
+            <div class="col s7 m9">
+              <span class="{{isCheck}}">{{nome}}</span>
             </div>
-            <div class="col s5 m1">
-              <input type="checkbox" id="{{_id}}" status="{{status}}">
-              <label for="{{_id}}"></label>
+            <div class="col s5 m3">
+              <a id="removerBtn" class="btn-floating btn-tiny waves-effect waves-light black espaco-btn-custom right">
+                <i class="mdi-action-delete"></i>
+              </a>
+              <a data-tooltip="Editor de Tarefas" id="editarBtn" class="btn-floating btn-tiny waves-effect waves-light black espaco-btn-custom right tooltipped" data-position="right">
+                <i class="mdi-editor-border-color"></i>
+              </a>
+              <input type="checkbox" id="{{_id}}" checked="{{status}}">
+              <label for="{{_id}}" data-tooltip="Mudar Status" class="right tooltipped" data-position="right"></label>
             </div>
            </div>
         </li>
       {{/each}}
-
     </ul>
 </template>

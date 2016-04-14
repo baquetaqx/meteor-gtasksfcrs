@@ -1,6 +1,37 @@
 .check{
   background-color: #eee;
+  text-decoration: line-through;
 }
 .sem-margin-bottom{
-  margin-bottom: 2px !important;
+  margin-top: 2px !important;
+}
+
+#removerBtn{
+  width: 30px !important;
+  height: 30px !important;
+  line-height: 30px !important;
+  margin-right: 5px;
+}
+#editarBtn{
+  width: 30px !important;
+  height: 30px !important;
+  line-height: 30px !important;
+  margin-right: 5px;
+}
+#editarBtn i{
+  line-height: 30px !important;
+}
+
+#removerBtn i{
+  line-height: 30px !important;
+}
+
+.espaco-btn-custom{
+  width: 30px !important;
+  height: 30px !important;
+  line-height: 30px !important;
+}
+
+.espaco-btn-custom i{
+  line-height: 30px !important;
 }
